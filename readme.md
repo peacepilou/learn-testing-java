@@ -27,11 +27,15 @@ Consignes de tests :
 À toi de réfléchir : quels cas doivent être testés pour valider cet algo ?
 
 ## Algo 5 - PasswordStrength (TDD)
-Tu vas écrire la méthode au fur et à mesure des tests, en commençant par les plus simples.
-Étapes :
-1.	Lire les 3 premiers tests déjà écrits
-2.	Écrire le code minimal pour les faire passer ✅
-3.	Ajouter des tests supplémentaires plus complexes
-4.	Faire évoluer le code progressivement
+En TDD, tu vas devoir implémenter un code de prod.
 
+Voici les spécifications : 
+1. Si le mot de passe est trop court (moins de 6 caractères), retourner "WEAK".
+2. Si le mot de passe contient uniquement des lettres, retourner "WEAK".
+3. Si le mot de passe contient des lettres et des chiffres, retourner "MEDIUM".
+4. Si le mot de passe contient des lettres, des chiffres et des caractères spéciaux, retourner "STRONG".
+5. Si le mot de passe est vide ou null, retourner "INVALID".
+6. Si le mot de passe contient des espaces, les ignorer dans l'évaluation.
+7. Si le mot de passe contient des caractères non imprimables, retourner "INVALID".
+8. Si le mot de passe dépasse une longueur maximale (par exemple, 128 caractères), retourner "INVALID".
 
