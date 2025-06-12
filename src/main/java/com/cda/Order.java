@@ -9,6 +9,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Table(name = "Orders")
 public class Order {
     @Id
     @GeneratedValue
